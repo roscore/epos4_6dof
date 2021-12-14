@@ -2,8 +2,8 @@ epos4_hardware
 ============
 
 # Origin Repo is ...
-https://github.com/RIVeR-Lab/epos_hardware
-https://github.com/yoshito-n-students/eposx_hardware
+* https://github.com/RIVeR-Lab/epos_hardware
+* https://github.com/yoshito-n-students/eposx_hardware
 
 The copyright of the original code belongs to the repository of the link above. In the event of copyright or license problems in the future, this repository may be deleted without notice.
 
