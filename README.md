@@ -7,6 +7,32 @@ epos4_hardware
 
 The copyright of the original code belongs to the repository of the link above. In the event of copyright or license problems in the future, this repository may be deleted without notice.
 
+# Usage
+* roslaunch eposx_hardware example_1.launch -> motor 1
+* roslaunch eposx_hardware example_2.launch -> motor 2
+* roslaunch eposx_hardware example_3.launch -> motor 3
+* roslaunch eposx_hardware example_4.launch -> motor 4
+* roslaunch eposx_hardware example_5.launch -> motor 5
+* roslaunch eposx_hardware example_6.launch -> motor 6
+
+## position control
+* default controller is effort controller
+* You can change ros controller by using below command (motor 1)
+  * rosservice call /motor_1/controller_manager/sitch_controller "start_controllers:
+    - 'position_controller'
+    stop_controllers:
+    - 'effort_controller'
+    strictness: 0" '
+
+* You can send position command by using below command
+  * rostopic pub /motor_1/position_controller/command std_msgs/Floate64 "data: 0.0"
+* when value is 417, motor will turn 1 revolute.
+
+  
+==============================================================
+
+# The contents below are about the original codes eposx_hardware and epos_hardware packages.
+
 # eposx_hardware is ...
 * ROS interface for [Maxon EPOS motor drivers](https://www.maxonmotor.com/maxon/view/content/EPOS-Detailsite)
 * forked from [RIVeR-Lab/epos_hardware](https://github.com/RIVeR-Lab/epos_hardware), with a lot of enhancements and refactors
