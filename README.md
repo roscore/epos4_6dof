@@ -24,7 +24,7 @@ The copyright of the original code belongs to the repository of the link above. 
     - 'effort_controller'
     strictness: 0" '
 
-* You can send position command by using below command
+* You can send position command by using below command (motor 1)
   * rostopic pub /motor_1/position_controller/command std_msgs/Floate64 "data: 0.0"
 * when value is 417, motor will turn 1 revolute.
 
