@@ -8,13 +8,15 @@ epos4_hardware
 The copyright of the original code belongs to the repository of the link above. In the event of copyright or license problems in the future, this repository may be deleted without notice.
 
 # Usage
-* roslaunch eposx_hardware example_1.launch -> motor 1
-* roslaunch eposx_hardware example_2.launch -> motor 2
-* roslaunch eposx_hardware example_3.launch -> motor 3
-* roslaunch eposx_hardware example_4.launch -> motor 4
-* roslaunch eposx_hardware example_5.launch -> motor 5
-* roslaunch eposx_hardware example_6.launch -> motor 6
-
+  ```
+  roslaunch eposx_hardware example_1.launch -> motor 1
+  roslaunch eposx_hardware example_2.launch -> motor 2
+  roslaunch eposx_hardware example_3.launch -> motor 3
+  roslaunch eposx_hardware example_4.launch -> motor 4
+  roslaunch eposx_hardware example_5.launch -> motor 5
+  roslaunch eposx_hardware example_6.launch -> motor 6
+  ```
+  
 ## position control
 * default controller is effort controller
 * You can change ros controller by using below command (motor 1)
