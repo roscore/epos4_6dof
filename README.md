@@ -18,14 +18,17 @@ The copyright of the original code belongs to the repository of the link above. 
 ## position control
 * default controller is effort controller
 * You can change ros controller by using below command (motor 1)
-  * rosservice call /motor_1/controller_manager/sitch_controller "start_controllers:
+    ```
+    rosservice call /motor_1/controller_manager/sitch_controller "start_controllers:
     - 'position_controller'
     stop_controllers:
     - 'effort_controller'
     strictness: 0" '
-
+    ```
 * You can send position command by using below command (motor 1)
-  * rostopic pub /motor_1/position_controller/command std_msgs/Floate64 "data: 0.0"
+    ```
+    rostopic pub /motor_1/position_controller/command std_msgs/Floate64 "data: 0.0"
+    ```
 * when value is 417, motor will turn 1 revolute.
 
   
