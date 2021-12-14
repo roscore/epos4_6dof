@@ -9,12 +9,12 @@ The copyright of the original code belongs to the repository of the link above. 
 
 # Usage
   ```
-  roslaunch eposx_hardware example_1.launch -> motor 1
-  roslaunch eposx_hardware example_2.launch -> motor 2
-  roslaunch eposx_hardware example_3.launch -> motor 3
-  roslaunch eposx_hardware example_4.launch -> motor 4
-  roslaunch eposx_hardware example_5.launch -> motor 5
-  roslaunch eposx_hardware example_6.launch -> motor 6
+  roslaunch eposx_hardware example_1.launch # motor 1
+  roslaunch eposx_hardware example_2.launch # motor 2
+  roslaunch eposx_hardware example_3.launch # motor 3
+  roslaunch eposx_hardware example_4.launch # motor 4
+  roslaunch eposx_hardware example_5.launch # motor 5
+  roslaunch eposx_hardware example_6.launch # motor 6
   ```
   
 ## position control
